@@ -1,0 +1,18 @@
+.Header {
+	width: 100%;
+	padding: 10px 60px;
+	position: fixed;
+	z-index: 20;
+	min-height: 65px;
+	top: 0;
+	left: 0;
+	background-color: #FF5733;
+	box-shadow: 0 10px 30px rgba(0,0,0, 0.3);
+	flex: 0 0 auto;
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
