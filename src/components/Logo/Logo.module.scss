@@ -1,42 +1,33 @@
+@import "../../utils/variables.scss";
+
 .Logo {
-	font-family: 'Oleo Script Swash Caps', cursive, Arial, Helvetica, sans-serif;
-	position: relative;
+  font-family: "Oleo Script Swash Caps", cursive, Arial, Helvetica, sans-serif;
+  position: relative;
 
-	&__link {
-		color: #202020;
-		font-size: 40px;
-		text-shadow: 1px 1px 2px rgba(0,0,0, 0.3);
-		transition: color ease 0.7s;
+  &__link {
+    color: #ffc7bb;
+    font-size: 35px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    transition: color ease 0.7s;
+  }
 
-		&-word {
-			display: block;
+  &:hover &__link {
+    color: #fff;
+  }
 
-			&:nth-child(2) {
-				margin-left: 65px;
-			}
-		}
+  &:hover &__link-icon::before {
+    background-image: url("../../../public/assets/icons/pizza_white.png");
+  }
 
-		&-icon {
-			position: absolute;
-			top: 42px;
-			left: 25px;
+  @media screen and (max-width: $mobile) {
+    &__link {
+      font-size: 27px;
+    }
+  }
 
-			&::before {
-				content: '';
-				position: absolute;
-				transition: ease 0.7s;
-				background-image: url('../../../public/assets/icons/pizza.png');
-				width: 32px;
-				height: 32px;	
-			}
-		}
-	}
-
-	&:hover &__link{
-		color: #fff;
-	}
-
-	&:hover &__link-icon::before{
-		background-image: url('../../../public/assets/icons/pizza_white.png');
-	}
+  @media screen and (max-width: $oldMobile) {
+    &__link {
+      font-size: 20px;
+    }
+  }
 }

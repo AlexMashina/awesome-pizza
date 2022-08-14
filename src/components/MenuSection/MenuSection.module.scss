@@ -1,0 +1,26 @@
+@import "../../utils/variables.scss";
+
+.MenuSection {
+  &__title {
+    font-size: 50px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 40px;
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: self-end;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: $mobile) {
+    &__title {
+      font-size: 35px;
+      padding-top: 60px;
+    }
+  }
+}

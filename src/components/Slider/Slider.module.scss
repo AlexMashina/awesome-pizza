@@ -1,0 +1,76 @@
+@import "../../utils/variables.scss";
+
+.Slider {
+  &__slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    max-width: 1030px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 60px;
+
+    &::before {
+      content: "";
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      transition: transform ease 0.5s;
+    }
+
+    &-content {
+      z-index: 5;
+    }
+
+    &-title {
+      font-size: 40px;
+      color: #ffc7bb;
+      line-height: 1.2;
+      font-weight: 700;
+      margin-bottom: 20px;
+
+      @media (max-width: 768px) {
+        font-size: 25px;
+      }
+    }
+
+    &-text {
+      color: rgba(255, 255, 255, 1);
+      font-size: 20px;
+      line-height: 1.2;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      background-position: right;
+      padding: 20px 15px 30px 15px;
+    }
+  }
+
+  &-pizza {
+    background-image: url("../../../public/assets/icons/new-pizza-slide.jpg");
+  }
+
+  &-limonades {
+    background-image: url("../../../public/assets/icons/new-limonads-slide.jpg");
+  }
+
+  &-skidka {
+    background-image: url("../../../public/assets/icons/skidka-slide.jpg");
+  }
+
+  &-work {
+    background-image: url("../../../public/assets/icons/work-slide.jpg");
+  }
+}

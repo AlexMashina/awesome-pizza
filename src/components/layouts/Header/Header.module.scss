@@ -1,18 +1,42 @@
-.Header {
-	width: 100%;
-	padding: 10px 60px;
-	position: fixed;
-	z-index: 20;
-	min-height: 65px;
-	top: 0;
-	left: 0;
-	background-color: #FF5733;
-	box-shadow: 0 10px 30px rgba(0,0,0, 0.3);
-	flex: 0 0 auto;
+@import "../../../utils/variables.scss";
 
-	&__wrapper {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
+.Header {
+  width: 100%;
+  padding: 13px 60px 10px;
+  position: fixed;
+  z-index: 20;
+  min-height: 65px;
+  top: 0;
+  left: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #666699;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 0 auto;
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (max-width: $tablet) {
+    padding: 13px 15px 10px;
+  }
+
+  @media screen and (max-width: $mobile) {
+  }
 }

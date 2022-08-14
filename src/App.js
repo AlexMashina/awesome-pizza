@@ -1,26 +1,18 @@
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
-//Layouts
-import { Header, Footer, Container } from './components/layouts';
+//Styles
+import "./App.css";
 
-//Components
-import { News } from './components';
+//Pages
+import { Home, Admin, Payment } from "./pages";
 
 function App() {
   return (
     <div className="App">
-			<Header />
-			<div className="App__main">
-				<Container>
-					<News />
-					<div className="App__block"></div>
-					<div className="App__block"></div>
-					<div className="App__block"></div>
-					<div className="App__block"></div>
-					<div className="App__block"></div>
-				</Container>
-			</div>
-			<Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </div>
   );
 }

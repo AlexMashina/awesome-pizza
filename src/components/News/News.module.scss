@@ -1,3 +1,10 @@
+@import "../../utils/variables.scss";
+
 .News {
-	
+  padding-top: 140px;
+
+  @media screen and (max-width: $tablet) {
+    padding-top: 0px;
+    margin: 0 -15px;
+  }
 }
