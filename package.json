@@ -50,5 +50,8 @@
     "stylelint": "^14.8.2",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-order": "^5.0.0"
+  },
+  "engines": {
+    "node": "14.17.5"
   }
 }
